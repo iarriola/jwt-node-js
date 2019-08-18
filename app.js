@@ -11,8 +11,7 @@ const app = express();
 mongoose.connect(
     process.env.DB_CONNECT,
     {useNewUrlParser: true},
-    (error) => 
-        {
+    (error) => {
             if(error) {
                 console.error(`An error has occurred: ${error}`);
             } else {
